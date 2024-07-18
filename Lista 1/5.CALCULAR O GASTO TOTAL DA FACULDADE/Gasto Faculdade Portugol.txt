@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+
+    // Variáveis
+    real mensalidade, transportedia, alimentacaodia, customensal, custoanual, diasaula
+
+    // Entradas
+    escreva ("Digite o valor da mensalidade:")
+    leia(mensalidade)
+    escreva ("Digite o seu gasto diário com transporte:")
+    leia (transportedia)
+    escreva ("Digite seu gasto diário com alimentação:")
+    leia (alimentacaodia)
+    escreva("Digite a quantidade de aulas mensais:")
+    leia(diasaula)
+
+    // Processamento
+    customensal = ( mensalidade + (transportedia * diasaula) + (alimentacaodia * diasaula))  
+    custoanual = (customensal * 12)
+
+    // Saída
+    escreva ("Seu gasto mensal com a Faculdade é:")
+    escreva (customensal)
+    escreva ("\n")
+    escreva ("Seu custo anual com a Faculdade é:")
+    escreva (custoanual)
+    
+  }
+}

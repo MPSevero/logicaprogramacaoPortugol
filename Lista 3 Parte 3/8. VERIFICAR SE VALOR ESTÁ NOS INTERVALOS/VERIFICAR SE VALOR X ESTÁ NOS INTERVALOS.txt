@@ -1,0 +1,57 @@
+programa {
+  funcao inicio() {
+    
+    inteiro n1, n2, n3, n4, n5, maiorintervalo, menorintervalo, maiorintervalo2, menorintervalo2
+
+    escreva("Digite 5 valores:")
+    leia(n1)
+    leia(n2)
+    leia(n3)
+    leia(n4)
+    leia(n5)
+
+    se( n1 == n2 ou n1 == n3 ou n1 == n4 ou n2 == n3 ou n2 == n4 ou n3 == n4)
+    escreva("Os 4 primeiros valores não podem ser repetidos!")
+    senao
+    {
+      se(n1 > n2)
+      {
+      maiorintervalo = n1
+      menorintervalo = n2 
+      }
+      senao
+      {
+      maiorintervalo = n2
+      menorintervalo = n1
+      }
+      se(n3 > n4)
+      {
+       maiorintervalo2 = n3
+       menorintervalo2 = n4
+      }
+      senao
+      {
+      maiorintervalo2 = n4
+      menorintervalo2 = n3
+      }
+      se(n5 >= menorintervalo e n5 <= maiorintervalo e n5 >= menorintervalo2 e n5 <= maiorintervalo2)
+       {
+       escreva("O quinto valor está em ambos os intervalos")
+       }
+      senao se(n5 >= menorintervalo e n5 <= maiorintervalo)
+      {
+       escreva("O quinto valor está no primeiro intervalo!")
+      }
+      senao se(n5 >= menorintervalo2 e n5 <= maiorintervalo2)
+      {
+       escreva(" O quinto valor está no segundo intervalo!") 
+      }
+      senao
+      {
+        escreva("O quinto valor NÃO está em nenhum dos intervalos!")
+      }
+    
+    }
+    
+  }
+}

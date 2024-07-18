@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+    
+   real av1, av2, trab, media
+
+   escreva("Digite a nota da avaliação 1:")
+   leia(av1)
+   escreva("Digite a nota da avaliação 2:")
+   leia(av2)
+   escreva("Digite a nota do trabalho:")
+   leia(trab)
+
+  media = ((av1 * 0.3)+(av2 * 0.4)+(trab * 0.3))
+
+  se( media >= 0 e media <= 4.99)
+  {
+   escreva("Reprovado!")
+  }
+  senao se(media > 4.99 e media <= 7.49)
+  {
+   escreva("Aprovado!")
+  }
+  senao se(media > 7.49)
+  {
+    escreva("Parabéns, você foi aprovado com excelência!")
+  }
+
+  }
+}

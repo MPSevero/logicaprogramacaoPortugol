@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+ 
+  // Variáveis
+  real grauscelsius, grausfahrenheit
+
+  // Entradas
+  escreva ("Digite o valor em Graus Celsius:")
+  leia (grauscelsius)
+
+  // Processamento
+  grausfahrenheit = ( grauscelsius * 1.8 ) + 32
+
+  // Saída
+  escreva ("O valor digitado, convertido para Fahrenheit é igual a:")
+  escreva (grausfahrenheit)
+
+}
+}

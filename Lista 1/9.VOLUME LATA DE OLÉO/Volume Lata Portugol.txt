@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    
+   // Variáveis
+   real altura, raio, volume
+
+   // Entradas
+   escreva ("Digite a altura da lata:")
+   leia (altura)
+   escreva ("Digite o raio da lata:")
+   leia (raio)
+
+   // Processamento
+   volume = ( 3.14149 * (raio * raio)) * altura
+
+   // Saída
+   escreva ("O volume da lata é:")
+   escreva (volume)
+
+  }
+}

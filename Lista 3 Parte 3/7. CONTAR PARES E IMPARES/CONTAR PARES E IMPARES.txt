@@ -1,0 +1,87 @@
+programa {
+  funcao inicio() {
+
+    inteiro n1, n2, n3, n4, n5, npar, nimpar, maiortipo
+    
+    npar = 0
+    nimpar = 0
+
+    escreva("Digite um valor:")
+    leia(n1)
+    escreva("Digite um valor:")
+    leia(n2)
+    escreva("Digite um valor:")
+    leia(n3)
+    escreva("Digite um valor:")
+    leia(n4)
+    escreva("Digite um valor:")
+    leia(n5)
+    
+
+
+    se( n1 % 2 == 0)
+    {
+     npar = (npar + 1)
+    }
+    senao 
+    {
+     nimpar = (nimpar + 1)
+    }
+    se( n2 % 2 == 0)
+    {
+     npar = (npar + 1)
+    }
+    senao 
+    {
+     nimpar = (nimpar + 1)
+    }
+    se( n3 % 2 == 0)
+    {
+     npar = (npar + 1)
+    }
+    senao 
+    {
+      nimpar = (nimpar + 1)
+    }
+    se( n4 % 2 == 0)
+    {
+      npar = (npar + 1)
+    }
+    senao 
+    {
+      nimpar = (nimpar + 1)
+    }
+    se( n5 % 2 == 0)
+    {
+      npar = (npar + 1)
+    }
+    senao 
+    {
+      nimpar = (nimpar + 1)
+    }
+    se(npar > nimpar)
+    {
+      maiortipo = 0
+    }
+    senao
+    {
+      maiortipo = 1
+    }
+
+    
+    escreva("A quantidade de números pares digitados foi: ", npar)
+    escreva("\n")
+    escreva("A quantidade de números impares digitados foi: ", nimpar)
+    escreva("\n")
+    
+    se(maiortipo == 0)
+    {
+     escreva("O tipo mais digitado foi PAR!")
+    }
+    senao 
+    {
+      escreva("O tipo mais digitado foi IMPAR!")
+    }
+    
+  }
+}

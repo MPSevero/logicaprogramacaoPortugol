@@ -1,0 +1,43 @@
+programa {
+  funcao inicio() {
+  
+  // Variáveis
+  real qtdaulasmensais, salariomensal, valealimentacao, valetransporte, salariobruto, inss, ir, salarioliquido
+  
+  // Entradas
+  escreva ("Digite a quantidade de aulas dadas no mês:")
+  leia (qtdaulasmensais)
+  
+  // Processamento
+  salariomensal = ( qtdaulasmensais * 25 )
+  valealimentacao = ( salariomensal * 0.1 )
+  valetransporte = ( salariomensal * 0.06 )
+  salariobruto = ( salariomensal + valealimentacao + valetransporte )
+  inss = ( salariomensal * 0.03 )
+  ir = ( salariomensal * 0.04 )
+  salarioliquido = ( salariobruto - inss - ir )
+  
+  // Saída
+  escreva ("Seu salário mensal é:")
+  escreva (salariomensal)
+  escreva ("\n")
+  escreva ("O valor do vale alimentação é:")
+  escreva(valealimentacao)
+  escreva ("\n")
+  escreva ("O valor do auxílio transporte é:")
+  escreva (valetransporte)
+  escreva ("\n")
+  escreva ("O salário bruto total é:")
+  escreva (salariobruto)
+  escreva ("\n")
+  escreva ("O valor descontado do INSS é:")
+  escreva (inss)
+  escreva ("\n")
+  escreva ("O valor descontado do IR é:")
+  escreva (ir)
+  escreva ("\n")
+  escreva ("O valor do salário líquido é:")
+  escreva (salarioliquido)
+
+ }
+}

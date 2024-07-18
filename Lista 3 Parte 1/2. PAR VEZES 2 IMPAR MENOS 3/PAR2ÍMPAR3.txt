@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+ 
+   inteiro numero, resto, resultado
+
+
+   escreva("Digite um número:")
+   leia(numero)
+
+  
+
+   resto = (numero % 2)
+    se( resto == 0)
+   {
+    resultado = (numero * 2)
+    escreva("O resultado é:")
+    escreva(resultado)
+   }
+
+   senao
+   {
+    resultado = (numero - 3)
+    escreva("O resultado é:")
+    escreva(resultado)
+   }
+
+   }
+}

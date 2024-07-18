@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+
+    inteiro a, b, c, resultadoab
+
+    escreva("Digite o valor 'a':")
+    leia(a)
+    escreva("Digite o valor 'b':")
+    leia(b)
+    escreva("Digite o valor 'c':")
+    leia(c)
+
+    resultadoab = (a + b)
+    se (resultadoab > c)
+    {
+     escreva("As somas dos valores de 'a' + 'b' é:", resultadoab,"\n","Portanto é MAIOR que o valor de 'c'") 
+    }  
+    senao
+    {
+      escreva("As somas dos valores de 'a' + 'b' é:", resultadoab, "\n","Portanto é MENOR que o valor de 'c'")
+    }  
+  }
+}

@@ -1,0 +1,26 @@
+programa {
+  funcao inicio() {
+  
+  // Variáveis
+  real notaatvdp, notaatvdo, notap1, notap2, mediasemestral
+
+  // Entradas
+  escreva ("Digite a nota da Atividade Presencial:")
+  leia (notaatvdp)
+  escreva ("Digite a nota da Atividade Online:")
+  leia (notaatvdo)
+  escreva ("Digite a nota da Prova 1:")
+  leia (notap1)
+  escreva ("Digite a nota da Prova 2:")
+  leia (notap2)
+
+  // Processamento
+
+  mediasemestral = (notaatvdp * 0.1 + notaatvdo * 0.2 + notap1 * 0.3 + notap2 * 0.4) / 1 
+
+  // Saída
+  escreva ("Sua média semestral é:")
+  escreva (mediasemestral)
+  
+}
+}

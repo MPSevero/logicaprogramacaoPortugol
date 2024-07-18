@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+
+    inteiro valor
+
+    escreva("Digite um valor inteiro:")
+    leia(valor)
+
+
+    se (nao(valor > 3))
+    {
+      escreva("O valor informado foi: ", valor)
+    }
+    senao
+    {
+      escreva("O valor informado foi: ", valor)
+    }
+  }
+}

@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+
+    // Variáveis
+    
+  real  valorreais, valoreuro, valordolar, cotacaoeuro, cotacaodolar
+   
+    // Entradas
+    escreva("Digite o valor em reais:")
+    leia(valorreais)
+    escreva("Digite a atual cotação do dolar:")
+    leia(cotacaodolar)
+    escreva("Digite a atual cotação do euro:")
+    leia(cotacaoeuro)
+
+    // Processamento
+    valoreuro = (valorreais * cotacaoeuro)
+    valordolar = (valorreais * cotacaodolar)
+
+    // Saída
+    escreva("O valor em dolar é:")
+    escreva(valordolar)
+    escreva ("\n")
+    escreva("O valor em euro é:")
+    escreva(valoreuro)
+    
+  }
+}

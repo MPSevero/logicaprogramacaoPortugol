@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+  
+   // variáveis
+   real parcelareal, juros, parcelaatraso
+   
+   // Entradas
+   escreva("Digite o valor da parcela real:")
+   leia(parcelareal)
+   escreva("Digite a porcentagem de juros:")
+   leia(juros)
+
+   // Processamento
+   parcelaatraso = (parcelareal + ( parcelareal * juros) / 100)
+   
+   // Saída
+   escreva ("O valor a ser pago será:")
+   escreva (parcelaatraso)
+
+  }
+}

@@ -1,0 +1,59 @@
+programa {
+  funcao inicio() {
+
+    inteiro valor1, valor2, valor3, valor4, valor5, maior, menor
+
+    escreva("Digite o primeiro valor:")
+    leia(valor1)
+    escreva("Digite o segundo valor:")
+    leia(valor2)
+    escreva("Digite o terceiro valor:")
+    leia(valor3)
+    escreva("Digite o quarto valor:")
+    leia(valor4)
+    escreva("Digite o quinto valor:")
+    leia(valor5)
+
+    se( valor1 >= valor2)
+    {
+    maior = valor1
+    menor = valor2
+    }
+    senao
+    {
+     maior = valor2
+     menor = valor1
+    }
+
+    se(valor3 >= maior)
+    {
+     maior = valor3
+    }
+    senao se(menor >= valor3)
+    {
+    menor = valor3
+    }
+
+    se(valor4 >= maior)
+    {
+     maior = valor4
+    }
+    senao se(menor >= valor4)
+    {
+     menor = valor4
+    }
+
+    se(  valor5 >= maior)
+    {
+      maior = valor5
+    }
+    senao se(menor >= valor5)
+    {
+     menor = valor5
+    }
+
+    escreva("O maior valor digitado foi: ", maior)
+    escreva("\n")
+    escreva("O menor valor digitado foi: ", menor)
+  }
+}

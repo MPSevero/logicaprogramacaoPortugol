@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+
+    inteiro num
+
+    escreva("Digite um valor inteiro de 1 a 9:")
+    leia(num)
+    
+    se( num >= 1 e num <= 9)
+    {
+      escreva("O valor ", num,  " está na faixa permitida!")
+    }
+    senao
+    {
+      escreva("O valor informado não é permitido pois não está na faixa de 1 a 9")
+    }
+  }
+}

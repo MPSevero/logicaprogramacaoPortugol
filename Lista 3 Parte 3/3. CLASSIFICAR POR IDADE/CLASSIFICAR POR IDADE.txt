@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() {
+    
+    inteiro idade
+
+    escreva("Digite sua idade:")
+    leia(idade)
+    
+    se(idade >= 0 e idade <= 10)
+    {
+      escreva("Olá criança")
+    }
+    senao se(idade >=11 e idade <= 14)
+    {
+      escreva("Olá, você é um(a) pré-adolecente")
+    }
+    senao se(idade >=15 e idade <=18)
+    {
+      escreva("Parabéns, você já pode ser um eleitor")
+    }
+    senao se(idade >= 19 e idade <= 21)
+    {
+      escreva("Hummm, você ja é um adulto")
+    }
+    senao se(idade > 21)
+    {
+      escreva("Bem, agora já está na hora de sair de casa e seguir sua vida...")
+    }
+
+  }
+}

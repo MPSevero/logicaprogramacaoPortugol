@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+
+    // Variáveis
+    real raio, area
+
+    // Entradas
+    escreva ("Digite o comprimento do raio:")
+    leia (raio)
+   
+    // Processamento
+    area = (raio * raio) * 3.14
+   
+    // Saída
+    escreva ("A área é:")
+    escreva (area)
+    
+  }
+}

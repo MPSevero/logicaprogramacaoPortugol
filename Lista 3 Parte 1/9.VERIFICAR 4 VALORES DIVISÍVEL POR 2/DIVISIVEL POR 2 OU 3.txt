@@ -1,0 +1,85 @@
+programa {
+  funcao inicio() {
+
+    inteiro a, b, c, d 
+
+    escreva("Digite o valor:")
+    leia(a)
+    escreva("Digite o valor:")
+    leia(b)
+    escreva("Digite o valor:")
+    leia(c)
+    escreva("Digite o valor:")
+    leia(d)
+
+   //
+   se( a % 2 == 0 )
+   {
+   escreva("O número:",a, "\n", "É divisivel por 2", "\n")
+   }
+   se( a % 3 == 0)
+   {
+   escreva("O número:",a, "\n", "É divisivel por 3","\n")
+   }
+   se( a % 2 == 1)
+   {
+    escreva("O número:",a, "\n", "Não é divisivel por 2","\n")
+   }
+   se( a % 3 == 1)
+   {
+    escreva("O número:",a, "\n", "Não é divisivel por 3","\n")
+   }
+   //
+   se( b % 2 == 0 )
+   {
+   escreva("O número:",b, "\n", "É divisivel por 2", "\n")
+   }
+   se( b % 3 == 0)
+   {
+   escreva("O número:",b, "\n", "É divisivel por 3","\n")
+   }
+   se( b % 2 == 1)
+   {
+    escreva("O número:",b, "\n", "Não é divisivel por 2","\n")
+   }
+   se( b % 3 == 1)
+   {
+    escreva("O número:",b, "\n", "Não é divisivel por 3","\n")
+   }
+   //   
+   se( c % 2 == 0 )
+   {
+   escreva("O número:",c, "\n", "É divisivel por 2", "\n")
+   }
+   se( c % 3 == 0)
+   {
+   escreva("O número:",c, "\n", "É divisivel por 3","\n")
+   }
+   se( c % 2 == 1)
+   {
+    escreva("O número:",c, "\n", "Não é divisivel por 2","\n")
+   }
+   se( c % 3 == 1)
+   {
+    escreva("O número:",c, "\n", "Não é divisivel por 3","\n")
+   }
+  //
+   se( d % 2 == 0 )
+   {
+   escreva("O número:",d, "\n", "É divisivel por 2", "\n")
+   }
+   se( d % 3 == 0)
+   {
+   escreva("O número:",d, "\n", "É divisivel por 3","\n")
+   }
+   se( d % 2 == 1)
+   {
+    escreva("O número:",d, "\n", "Não é divisivel por 2","\n")
+   }
+   se( d % 3 == 1)
+   {
+    escreva("O número:",d, "\n", "Não é divisivel por 3","\n")
+   }
+
+ }
+}

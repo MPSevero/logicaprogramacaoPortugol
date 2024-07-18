@@ -1,0 +1,32 @@
+programa {
+
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    
+    inteiro num, raiz
+
+    escreva("Digite um número:")
+    leia(num)
+
+    se(num < 0)
+    {
+     escreva("O número digitado é inválido!")
+    }
+
+    senao
+    {
+      se( num % 2 == 0)
+      {
+      raiz = (mat.raiz(num,2))
+      escreva("O número ", num, " é par!", "\n")
+      escreva("E sua raiz quadrada é:", raiz)
+      }
+      senao
+      {
+      raiz = (mat.raiz(num,2))
+      escreva("O número ", num, " é impar!", "\n")
+      escreva("E sua raiz quadrada é:", raiz)
+      }
+  
+    }
+

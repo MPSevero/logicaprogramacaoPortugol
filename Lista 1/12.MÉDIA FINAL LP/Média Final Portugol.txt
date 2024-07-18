@@ -1,0 +1,39 @@
+programa {
+  funcao inicio() {
+    
+    // Variáveis
+    real mediafinal, np1, np2, atvs1, ead1, av1, atvs2, ead2, pluri, av2
+    
+    // Entradas
+    escreva("Digite a nota da ATVs1:")
+    leia(atvs1)
+    escreva("Digite a nota do EAD 1:")
+    leia(ead1)
+    escreva("Digite a nota da AV1:")
+    leia(av1)
+
+    escreva("Digite a nota da ATVs2:")
+    leia(atvs2)
+    escreva("Digite a nota do EAD 2:")
+    leia(ead2)
+    escreva("Digite a nota do PLURI:")
+    leia(pluri)
+    escreva("Digite a nota da AV2:")
+    leia(av2)
+
+    // Processamento
+    np1 =  ((atvs1 * 0.2) + (ead1 * 0.2) + (av1 * 0.6))
+    np2 = ((atvs2 * 0.2)+ (ead2 * 0.2) + (pluri * 0.2) + (av2 * 0.4))
+    mediafinal = ((np1 * 0.4) + (np2 * 0.6))
+
+    // Saída
+    escreva("Sua nota NP1 é:")
+    escreva(np1)
+    escreva("\n")
+    escreva("Sua nota NP2 é:")
+    escreva(np2)
+    escreva("\n")
+    escreva("Sua média final é:")
+    escreva(mediafinal)
+ }
+}

@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+
+  // Variáveis
+  inteiro anonascimento, anoatual, diasvividos
+
+  // Entradas
+  escreva ("Digite o seu ano de nascimento:")
+  leia (anonascimento)
+  escreva ("Digite o ano atual:")
+  leia (anoatual)
+
+  // Processamento
+  diasvividos = (anoatual - anonascimento) * 365
+
+  // Saída
+  escreva ("Você viveu:")
+  escreva (diasvividos)
+  escreva ("dias")
+
+ }
+}

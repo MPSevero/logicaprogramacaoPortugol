@@ -1,0 +1,39 @@
+programa {
+  funcao inicio() {
+  
+  real nota1, nota2, nota3, nota4, notaexame, media, media2
+
+  escreva("Digite a nota 1:")
+  leia(nota1)
+  escreva("Digite a nota 2:")
+  leia(nota2)
+  escreva("Digite a nota 3:")
+  leia(nota3)
+  escreva("Digite a nota 4:")
+  leia(nota4)
+    
+  media = (nota1 + nota2 + nota3 + nota4) / 4
+  
+  se(media >= 7)
+  {
+   escreva("Sua nota é:",media, "\n", "Resultado: APROVADO!!!")
+  }
+  senao
+  {
+  escreva("Digite sua nota do exame:")
+  leia(notaexame)
+
+  media2 = (media + notaexame) / 2
+
+  se(media2 >= 5)
+  {
+   escreva("Sua nota é:",media2, "\n", "Resultado: APROVADO EM EXAME!!!")
+  }
+  senao
+  {
+  escreva("Sua nota é:",media2, "\n", "Resultado: REPROVADO!")
+  }
+  
+  }
+ }
+}

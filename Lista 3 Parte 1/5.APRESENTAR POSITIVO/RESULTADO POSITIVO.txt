@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+
+    inteiro numero, resultado
+
+    escreva("Digite um número inteiro:")
+    leia(numero)
+
+    se(numero < 0)
+    {
+     resultado = (numero * -1)
+     escreva(resultado)
+    }
+    senao
+    {
+      resultado = (numero * 1)
+      escreva(resultado)
+    }
+    
+  }
+}

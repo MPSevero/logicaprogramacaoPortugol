@@ -1,0 +1,76 @@
+
+programa {
+  funcao inicio() {
+
+    real arearetang, areaquadra, areatriang, areacirculo, lado1ret, lado2ret, ladoquad, basetriang, alturatriang, raio, maior, menor
+
+    escreva("Primeiro iremos calcular a área do retângulo", "\n")
+    escreva("Digite a medida do menor lado:")
+    leia(lado1ret)
+    escreva("Digite a medida do maior lado:")
+    leia(lado2ret)
+
+    arearetang = (lado1ret * lado2ret)
+
+    escreva("Agora iremos calcular a área do quadrado", "\n")
+    escreva("Digite a medida de um dos lados do quadrado:")
+    leia(ladoquad)
+
+    areaquadra = (ladoquad * ladoquad)
+
+    escreva("Agora iremos calcular a área do triângulo", "\n")
+    escreva("Digite a medida da base do triângulo:")
+    leia(basetriang)
+    escreva("Digite a medida da altura do triângulo:")
+    leia(alturatriang)   
+
+    areatriang = (basetriang * alturatriang) / 2
+
+    escreva("Agora iremos calcular a área do círculo", "\n") 
+    escreva("Digite a medida do raio do círculo:")
+    leia(raio)
+
+    areacirculo = (raio * raio) * 3.14
+
+    se( arearetang >= areaquadra)
+    {
+      maior = arearetang
+      menor = areaquadra
+    }
+    senao
+    {
+      maior = areaquadra
+      menor = arearetang
+    }
+    se(areatriang >= maior)
+    {
+     maior = areatriang
+    }
+    senao se( menor >= areatriang)
+    {
+      menor = areatriang
+    }
+    se(areacirculo >= maior)
+    {
+      maior = areacirculo
+    }
+    senao se(menor >= areacirculo)
+    {
+      menor = areacirculo
+    }
+
+    escreva("A área do retângulo é: ", arearetang, "\n")
+    escreva("A área do quadrado é: ", areaquadra, "\n")
+    escreva("A área do triângulo é: ", areatriang, "\n")
+    escreva("A área do círculo é ", areacirculo, "\n")
+
+    escreva("A figura com a menor área é: ", menor, "\n")
+    escreva("A figura com a maior área é: ", maior, "\n")
+
+    se(menor == arearetang)
+    {
+     
+    }
+
+  }
+}

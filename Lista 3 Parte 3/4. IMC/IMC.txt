@@ -1,0 +1,55 @@
+programa {
+  
+  funcao inicio() {
+  real peso, altura, imc
+
+  escreva("Digite o seu peso em Kg: ")
+  leia(peso)
+  se ((peso <= 0) ou (peso > 160))
+  {
+  escreva("Valor inválido")
+  }
+  senao 
+  {
+    escreva("Digite a sua altura: ")
+    leia(altura)
+    se (altura < 1 ou altura > 2.30 )
+    {
+      escreva("Valor inválido")
+    }
+    senao 
+    {
+      
+      imc = peso / (altura * altura)
+        se(imc > 18.4 e imc <= 24.9)
+      {
+      escreva("Seu IMC é de ", imc," então você está no peso normal!")
+      }
+      senao se ( imc <= 16.9 )
+      {
+        escreva("Seu IMC é de ", imc," então você está muito abaixo do peso!")
+      }
+      senao se ( imc > 16.9 e imc <= 18.4)
+      {
+       escreva("Seu IMC é de ", imc," então você está abaixo do peso!")
+      }
+      senao se(imc > 24.9  e imc <= 29.9)
+      {
+        escreva("Seu IMC é de ", imc," então você está no Sobrepeso!")
+      }
+      senao se(imc > 29.9 e imc <= 34.9)
+      {
+        escreva("Seu IMC é de ", imc," então você está Obeso grau I!")
+      }
+      senao se(imc > 34.9 e imc <= 40)
+      {
+        escreva("Seu IMC é de ", imc," então você está Obeso grau II")
+      }
+      senao se(imc > 40)
+      escreva("Seu IMC é de ", imc, " então você está Obeso grau III")
+      
+
+    }
+  }
+  }
+}

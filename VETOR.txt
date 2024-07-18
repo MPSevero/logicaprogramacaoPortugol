@@ -1,0 +1,43 @@
+programa {
+  funcao inicio() {
+    inteiro opcao = 0, i = 0, s = 0
+    inteiro vetoridades[5]
+
+    enquanto (opcao != 9) {
+      escreva("\n\n")
+      escreva(":: MANIPULACAO DE VETOR ::..\n")
+      escreva("1. Inicializar vetor        \n")
+      escreva("2. Carregar                 \n")
+      escreva("3. Imprimir                 \n")
+      escreva("4. Somar                    \n")
+      escreva("9. Sair                     \n")
+      escreva("Digite a opcao: ")
+      leia(opcao)
+
+      se (opcao == 1) {
+        para (i = 0; i < 5; i++) {
+          vetoridades[i] = 0
+        }
+
+      } senao se (opcao == 2) {
+        para (i = 0; i < 5; i++) {
+          leia(vetoridades[i])
+        }
+
+      } senao se (opcao == 3) {
+        para (i = 0; i < 5; i++) {
+          escreva(vetoridades[i], "\n")
+        }
+
+      } senao se (opcao == 4) {
+        s = 0
+
+        para (i = 0; i < 5; i++) {
+          s = s + vetoridades[i]
+        }
+        
+        escreva("A soma e: ", s)
+      }
+    }    
+  }
+}

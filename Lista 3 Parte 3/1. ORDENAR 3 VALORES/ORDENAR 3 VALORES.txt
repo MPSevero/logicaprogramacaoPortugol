@@ -1,0 +1,37 @@
+programa {
+  funcao inicio() {
+    
+    inteiro a, b, c
+
+    escreva("Digite 3 valores:")
+    leia(a)
+    leia(b)
+    leia(c)
+
+    se( a <= b e b <= c)
+    {
+     escreva("A ordenação dos números na ordem crescente é: ", a," ", b," ", c)
+    }
+    senao se(a <= c e a <= b)
+    {
+     escreva("A ordenação dos números na ordem crescente é: ", a," ", c," ", b)
+    }
+    senao se(b <= a e a <= c)
+    {
+      escreva("A ordenação dos números na ordem crescente é: ", b," ", a," ", c)
+    }
+    senao se(b <= c e c <= a)
+    {
+     escreva("A ordenação dos números na ordem crescente é: ", b," ", c," ", a)
+    }
+    senao se( c <= a e a <= b)
+    {
+     escreva("A ordenação dos números na ordem crescente é: ", c," ", a," ", b)
+    }
+    senao se(c <= b e b <= a)
+    {
+     escreva("A ordenação dos números na ordem crescente é: ", c," ", b," ", a)
+    }
+    }
+  }
+}

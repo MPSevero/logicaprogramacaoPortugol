@@ -1,0 +1,68 @@
+programa {
+  inclua biblioteca Util --> util
+  funcao inicio() {
+
+    inteiro opcao = 0, lin = 0, col = 0, soma = 0, contar = 0
+    inteiro matrizidades[2][3]
+
+    enquanto (opcao != 9)
+    {
+      escreva("\n")
+      escreva("MANIPULAR MATRIZ IDADES \n")
+      escreva("1. Iniciar              \n")
+      escreva("2. Carregar manual      \n")
+      escreva("3. Carregar aleatorio   \n")
+      escreva("4. Imprimir             \n")
+      escreva("5. Somar                \n")
+      escreva("6. Contar Pares         \n")
+      escreva("Digite a opcao:")
+      leia(opcao)
+      se (opcao == 1){
+       matrizidades[0][0] = 0
+       matrizidades[0][1] = 0
+       matrizidades[0][2] = 0
+       matrizidades[1][0] = 0
+       matrizidades[1][1] = 0
+       matrizidades[1][2] = 0
+      } senao se(opcao == 2){
+        para(lin = 0; lin < 2; lin++){
+          para (col = 0; col < 3; col++)
+          leia(matrizidades[lin][col])
+        }
+      } senao se(opcao == 3){
+         para(lin = 0; lin < 2; lin++){
+          para (col = 0; col < 3; col++)
+           matrizidades[lin][col] = util.sorteia(1,5)
+          }
+
+      } senao se(opcao == 4)
+      {
+       para (lin = 0; lin < 2; lin++){
+        para( col = 0; col < 3; col++){
+          escreva(lin, "x", col, "=",matrizidades[lin][col], "\n")
+        }
+       }
+      } senao se(opcao == 5){
+        soma = 0
+        para(lin =0; lin < 2; lin++){
+          para(col = 0; col < 3; col++){
+            soma = soma + matrizidades[lin][col]
+          }
+        }
+        escreva("A soma é:", soma, "\n")
+      } senao se(opcao == 6){
+        contar = 0
+        para(lin =0; lin < 2; lin++){
+          para(col = 0; col < 3; col++)
+           se((matrizidades[lin][col] % 2) == 0){
+            escreva(matrizidades[lin][col], "\n")
+            contar = contar + 1 
+           }
+          }
+        } 
+     
+     escreva("Numero de pares:", contar, "\n")
+
+    }
+  }
+}
